@@ -1,0 +1,104 @@
+body{
+	background-color: #aaa;
+}
+.row{
+	padding-top: 50px;
+}
+.all-form-block{
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #eee;
+}
+
+.title-form-block{
+	background-color: #E06F63;
+	
+	/*外層要有一個overflow hidden*/
+	/*padding-bottom: 1000px;
+	margin-bottom: 1000px;*/
+}
+.my-form{
+	margin-left: -15px;
+	margin-right: -15px;	
+}
+@media screen and (min-width:768px){
+	.my-form{
+		display: flex;
+	}
+}
+.form-title{
+	padding: 0 20px;
+	color: #fff;
+}
+.form-title small{
+	color: #fff;
+	font-size: 14px;
+}
+
+.form-title p{
+	line-height: 1.8;
+	font-size: 15px;
+}
+.form-main{
+	padding: 30px 20px;
+}
+.label-title{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline{
+	margin-left: 0;
+}
+.checkbox-inline, .radio-inline{
+	margin-right: 1em;
+}
+
+@media screen and (min-width:768px){
+	.user-birthdate .form-group + .form-group{
+		margin-left: 1em;
+	}				
+}
+.help-block{
+	display: none;
+	color: #f00;
+}
+.done{
+	display: none;
+}
+.my-check{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border: 1px solid #aaa;
+	color: #f00;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+.my-check i{
+	position: absolute;
+	top: -6px;
+	left: -2px;
+	font-size: 20px;
+	transform: scale(0);
+}
+
+input[type=checkbox]:checked + .my-check i{
+	transform: scale(1);
+}
+
+.user-interest .checkbox-inline{
+	padding-left: 0;
+}
+
+.user-interest input[type=checkbox]{
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin-left: 0;
+}
